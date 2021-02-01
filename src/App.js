@@ -58,7 +58,7 @@ const App = () => {
 
   return (
     <Router>
-      <div>
+      <div css={{ fontFamily: '"Marcellus SC", serif' }}>
         <Navbar totalItems={cart.total_items} />
         <Switch>
           <Route exact path="/">
