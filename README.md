@@ -1,3 +1,4 @@
 # maekju
 
-e-commerce web app for fictional beer
+Description: E-commerce web app for fictional beer
+Tech Stack: Javascript, HTML, CSS, Commerce, Stripe, React, Material-UI, Netlify
