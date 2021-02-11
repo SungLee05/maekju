@@ -23,7 +23,6 @@ const PaymentForm = ({
     if (!stripe || !elements) return;
 
     const cardElement = elements.getElement(CardElement);
-
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
       card: cardElement,
@@ -70,7 +69,7 @@ const PaymentForm = ({
       </Typography>
       <Elements stripe={stripePromise}>
         <ElementsConsumer>
-          {(elements, stripe) => (
+          {({ elements, stripe }) => (
             <form onSubmit={(e) => handleSubmit(e, elements, stripe)}>
               <CardElement />
               <br />
